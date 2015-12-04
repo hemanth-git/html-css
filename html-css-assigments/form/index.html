@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Form horizontal</title>
+	<link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+	<div class="form-main-div">
+		<form class="horizontal" action="#" method="post">
+			<div class="form-element">
+				<div class="left-label">
+					<label for="txtFirstName">First name</label>
+				</div>
+				<div class="form-control">
+					<input type="text" name="firstName" id="txtFirstName" maxlength="35">
+				</div>
+			</div>
+			<div class="form-element">
+				<div class="left-label">
+					<label for="txtLastName">Last name</label>
+				</div>
+				<div class="form-control">
+					<input type="text" name="lastName" id="txtLastName" maxlength="35">
+				</div>
+			</div>
+			<div class="form-element">
+				<div class="left-label">
+					<label for="txtEmail">Email</label>
+				</div>
+				<div class="form-control">
+					<input type="text" name="email" id="txtEmail" maxlength="35">
+				</div>
+			</div>
+
+			<div class="form-element">
+				<div class="left-label">
+					<label for="ddlCountry">Country</label>
+				</div>
+				<!-- select multiple to make it allow you to select multiple values -->
+				<div class="form-control">
+					<select id="ddlCountry" name="state">
+						<option value="-1">Please select a country...</option>
+
+						<option value="india">India</option>
+						<option value="australia">Australia</option>
+						<option value="england">England</option>
+						<option value="us">US</option>
+						<option value="canada">Canada</option>
+						<option value="pakistan">Pakistan</option>
+
+					</select>
+				</div>
+			</div>
+
+			<div class="form-element">
+				<div class="left-label">
+					<label>Gender</label>
+				</div>
+				<div class="form-control">
+					<label class="inline-labels">
+						<input type="radio" name="gender" value="male"> Male
+					</label>
+					<label class="inline-labels">
+						<!-- IMPORTANT -- ID has to be unique. -->
+						<input id="rdoFemale" type="radio" name="gender" value="female"> Female
+					</label>
+					<label class="inline-labels">
+						<!-- Avoid ID's unless necessary! This is just for example. 
+									An ID is not needed here. -->
+						<input id="rdoOthers" type="radio" name="gender" value="others"> Other
+					</label>
+				</div>
+			</div>
+			<div class="form-element">
+				<div class="left-label">
+					<label for="txtDob">Date of birth[DD-MM-YYYY]</label>
+				</div>
+				<div class="form-control">
+					<input type="text" name="email" id="txtDob" maxlength="10">
+				</div>
+			</div>
+			<div class="form-element">
+				<div class="left-label">
+					<label>
+						Languages you know
+					</label>
+				</div>
+				<div class="form-control">
+					<label class="inline-labels">
+						<input type="checkbox" name="languages[]" value="English"> English
+					</label>
+					<label class="inline-labels">
+						<input type="checkbox" name="languages[]" value="Hindi"> Hindi
+					</label>
+					<label class="inline-labels">
+						<input type="checkbox" name="languages[]" value="Telugu"> Telugu
+					</label>
+					<label class="inline-labels">
+						<input id="chkTamil" type="checkbox" name="languages[]" value="Tamil"> Tamil
+					</label>
+					<label class="inline-labels">
+						<input id="chkTamil" type="checkbox" name="languages[]" value="Tamil"> Tamil
+					</label>
+					<label class="inline-labels">
+						<input id="chkTamil" type="checkbox" name="languages[]" value="Tamil"> Tamil
+					</label>
+					<label class="inline-labels">
+						<input id="chkTamil" type="checkbox" name="languages[]" value="Tamil"> Tamil
+					</label>
+				</div>
+			</div>
+			<div class="form-element">
+				<div class="left-label">
+					<label for="txtAddress">Address</label>
+				</div>
+				<div class="form-control">
+					<textarea name="address" id="txtAddress"></textarea>
+				</div>
+			</div>
+			<div class="form-element">
+				<div class="left-label">
+					<label for="flPicture">Picture</label>
+				</div>
+				<div class="form-control">
+					<input type="file" id="flPicture" name="picture">
+				</div>
+			</div>
+			<div class="from-element">
+				<div class="left-label"></div>
+				<div class="form-control">
+					<label class="declare">
+						<input type="checkbox" name="declare" value="English"> Here by I declare that above provided information is true.
+					</label>
+				</div>
+			</div>
+			<div class="btn-container">
+				<input type="submit" value="Register!" class="btn">
+				<input type="reset" value="Clear" class="btn">
+			</div>
+		</form>
+	</div>
+</body>
+
+</html>

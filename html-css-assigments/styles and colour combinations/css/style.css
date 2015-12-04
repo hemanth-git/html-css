@@ -1,0 +1,211 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/***************** CSS restter ends here ************************************
+*********************************************************************************/
+.main-container{
+	width: 970px;
+	margin: auto;
+	border: 3px solid #000000;
+	background-image: url('../img/black-white.jpg');
+	    font-family: sans-serif;
+}
+.left{
+	
+	width: 240px;
+	height: 500px;
+	display: inline-block;
+	margin:10px
+	
+}
+.right{
+	
+	width: 700px;
+	height: 500px;
+	display: inline-block;
+	background-color: #0d2c40;
+	background-image: url('../img/icon-half.svg');
+	background-repeat: no-repeat;
+	background-position: right center;
+	background-size: 40%;
+	vertical-align: top;
+	margin-top: 10px;
+	opacity: 0.85;
+	
+}
+.right h1{
+	color: #ffffff;
+	font-size: 2em;
+	text-align: center;
+	padding: 5%;
+}
+.right p{
+	color: #ffffff;
+	font-size: 1.10em;
+	width: 67%;
+	margin-left: 30px;
+	margin-top: 22px;
+	
+}
+.top{
+	
+	width: 230px;
+	height: 207px;
+	float: left;
+	background-color: rgba(0, 188, 217, 0.8);
+	background-image: url('../img/icon-circles.svg');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: 1px -14px;		
+}
+.bottom{
+	
+	width: 229px;
+	height: 280px;
+	display: inline-block;
+	margin-top: 10px;
+	background-color: #f6efe5;
+	opacity: 0.8;
+}
+.bottom h3, .corner h3,.bottom-address h3, .bottom-services h3{
+    font-size: 155%;
+    vertical-align: bottom;
+	color: #0d2c40;
+	text-align: center;	
+	margin-top: 20px;
+	text-decoration: underline;	
+
+}
+.bottom p{
+	margin-top: 20px;
+	font-size: 106%;
+	color: #0d2c40;
+	text-align: center;
+	line-height: 29px;
+}
+.bottom a{
+	text-decoration: none;
+	color: #12120c;
+}
+.bottom a:hover{
+	text-decoration: underline;
+	color: #12120c;
+}
+.corner{
+	
+	width: 230px;
+	height: 198px;
+	background-color: rgba(0, 188, 217, 0.8);
+	display: inline-block;
+	margin-top: 20px;
+	
+	margin-bottom: 20px;
+	margin-left: 40px;
+	
+}
+
+
+.bottom-services{
+	
+	width: 320px;
+	height: 195px;
+	display: inline-block;
+	margin-top: 20px;
+	background-color: #f6efe5;
+	opacity: 0.88;
+	vertical-align: top;
+	margin-left: 40px;
+}
+
+.bottom-address{
+	
+	width: 250px;
+	height: 195px;
+	display: inline-block;
+	margin-top: 20px;
+	background-color: rgba(0, 188, 217, 0.8);
+	opacity: 0.88;
+	margin-left: 40px;
+	vertical-align: top;
+}
+.follow-us{
+	width: 90%;
+	height: 150px;
+	margin: auto;
+	background-color: #0d2c40;
+	opacity: 0.89;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	
+}
+.follow-us h3{
+	color: #ffffff;
+	font-size: 1.10em;
+	text-align: center;
+	padding: 20px;
+}
+.follow-us img{
+	margin-left: 79px;
+	width: 100px;
+	height: 70px;
+	vertical-align: top;
+}
+.bottom-services li{
+	font-size: 15px;
+	line-height: 20px;
+}
+ul{
+	margin-left: 15px;
+	list-style-type: circle;
+	list-style-position: inside;
+}
+.bottom-address p,.corner p {
+	font-size: 15px;
+	line-height: 20px;
+	padding: 20px;
+}
